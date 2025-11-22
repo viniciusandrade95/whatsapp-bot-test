@@ -65,7 +65,7 @@ def send_whatsapp_message(to_number: str, text: str):
         print("Missing WHATSAPP_TOKEN or PHONE_NUMBER_ID")
         return
 
-    url = f"https://graph.facebook.com/v24.0/{PHONE_NUMBER_ID}/messages"
+    url = f"https://graph.facebook.com/v22.0/{PHONE_NUMBER_ID}/messages"
     headers = {
         "Authorization": f"Bearer {WHATSAPP_TOKEN}",
         "Content-Type": "application/json"
